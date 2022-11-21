@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarsen D'Artois | Contact</title>
+    <link rel="stylesheet" href="./static/styles/styles.css">
+    <link rel="stylesheet" href="./static/styles/styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;1000&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<header class="container active">
+    <div class="contact-container">
+        <div class="main-title">
+            <h2>Contact <span>Me</span></h2>
+        </div>
+        <div class="contact-content-con">
+            <div class="left-contact">
+                <h4>Contact me here</h4>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Location</span>
+                        </div>
+                        <p>
+                            : Miragoâne, Haiti
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <i class="fas fa-globe-africa"></i>
+                            <span>Languages</span>
+                        </div>
+                        <p>
+                            <span>: Haitian Creole, French, English, Spanish, Korean</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <div class="contact-icon">
+                        <a href="https://www.patreon.com/clarsendartois" target="_blank">
+                            <i class="fab fa-patreon"></i>
+                        </a>
+                        <a href="https://www.artstation.com/clarsendartois" target="_blank">
+                            <i class="fab fa-artstation"></i>
+                        </a>
+                        <a href="https://twitter.com/clarsendartois" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/clarsen-d-artois-62aa24226" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.instagram.com/clarsendartois" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://web.facebook.com/clarsendartois" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                    <div class="contact-icon">
+                        <a href="https://in.pinterest.com/clarsendartois" target="_blank">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@blendpy" target="_blank">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@blendpy" target="_blank">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.behance.net/clarsendartois" target="_blank">
+                            <i class="fab fa-behance"></i>
+                        </a>
+                        <a href="https://github.com/clarsendartois" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://medium.com/@clarsendartois" target="_blank">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                        <a href="https://dribbble.com/clarsend" target="_blank">
+                            <i class="fab fa-dribbble"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="right-contact">
+                <form action="submit_form" method="post" class="contact-form">
+                    <div class="input-control i-c-2">
+                        <input name="name" type="text" required placeholder="YOUR NAME">
+                        <input name="email" type="email" required placeholder="YOUR EMAIL">
+                    </div>
+                    <div class="input-control">
+                        <input name="subject" type="text" required placeholder="ENTER SUBJECT">
+                    </div>
+                    <div class="input-control">
+                        <textarea name="message" id="" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                    </div>
+                    <div class="submit-btn">
+                        <div class="main-btn">
+                            <span class="btn-text">
+                                <input style="background-color:transparent;
+                                              color:white;
+                                              font-family:Poppins, sans-serif;
+                                              font-size:20px;
+                                              border:none"
+                                       type="submit" value="Send">
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="controls">
+    <div><a href="./index.html" class="control">
+        <i class="fas fa-home"></i></a>
+    </div>
+    <div><a href="./about.html" class="control">
+        <i class="fas fa-user"></i></a>
+    </div>
+    <div><a href="./portfolio.html" class="control">
+        <i class="fas fa-briefcase"></i></a>
+    </div>
+    <div><a href="./gallery.html" class="control">
+        <i class="fas fa-image"></i></a>
+    </div>
+    <div><a href="./blogs.html" class="control">
+        <i class="far fa-newspaper"></i></a>
+    </div>
+    <div><a href="./contact.html" class="control active-btn">
+        <i class="fas fa-envelope-open"></i></a>
+    </div>
+</div>
+<div class="theme-btn">
+    <i class="fas fa-adjust"></i>
+</div>
+<script src="./static/app.js"></script>
+<script src="./static/app2.js"></script>
+</body>
+</html>

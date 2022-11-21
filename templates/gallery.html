@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarsen D'Artois | Gallery</title>
+    <link rel="stylesheet" href="./static/styles/styles.css">
+    <link rel="stylesheet" href="./static/styles/styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;1000&display=swap"
+          rel="stylesheet">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+<header class="container active">
+    <div class="main-title">
+        <h2>My <span>gallery</span></h2>
+    </div>
+    <div class="portfolios">
+        <div class="portfolio-item">
+            <div class="image">
+                <div class="row">
+                    <div class="column">
+                        <img src="./static/img/blendpy_logo_socket.png" alt="blendpy_logo_socket"
+                             onclick="openModal();currentSlide(1)"
+                             class="hover-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <div class="row">
+                    <div class="column">
+                        <img src="./static/img/JPG_to_PNG.png" alt="JPG_to_PNG"
+                             onclick="openModal();currentSlide(1)"
+                             class="hover-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <div class="row">
+                    <div class="column">
+                        <iframe src="https://www.youtube.com/@blendpy"
+                                onclick="openModal();currentSlide(1)"
+                                class="hover-shadow">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <div class="row">
+                    <div class="column">
+                        <img src="./static/img/img_resize.png" alt="img_resize"
+                             onclick="openModal();currentSlide(1)"
+                             class="hover-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <div class="row">
+                    <div class="column">
+                        <iframe src="https://www.youtube.com/@blendpy"
+                                onclick="openModal();currentSlide(1)"
+                                class="hover-shadow">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <div class="row">
+                    <div class="column">
+                        <img src="./static/img/pdf_watermarker.png" alt="PDF Watermarker"
+                             onclick="openModal();currentSlide(1)"
+                             class="hover-shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-item">
+            <div class="image">
+                <div class="row">
+                    <div class="column">
+                        <iframe src="https://www.youtube.com/@blendpy"
+                                onclick="openModal();currentSlide(1)"
+                                class="hover-shadow">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 7</div>
+                <img src="./static/img/blendpy_logo_socket_wide.png" alt="blendpy_logo_socket_wide"
+                     style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">2 / 7</div>
+                <img src="./static/img/JPG_to_PNG_wide.png" alt="JPG_to_PNG_wide" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">3 / 7</div>
+                <iframe src="https://www.youtube.com/@blendpy" style="width:100%;height:400px;">
+                </iframe>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 7</div>
+                <img src="./static/img/img_resize_wide.png" alt="img_resize_wide" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 7</div>
+                <iframe src="https://www.youtube.com/@blendpy" style="width:100%;height:400px;">
+                </iframe>
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 7</div>
+                <img src="./static/img/pdf_watermarker_wide.png" alt="img_resize_wide" style="width:100%;">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">7 / 7</div>
+                <iframe src="https://www.youtube.com/@blendpy" style="width:100%;height:400px;">
+                </iframe>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="controls">
+    <div><a href="./index.html" class="control">
+        <i class="fas fa-home"></i></a>
+    </div>
+    <div><a href="./about.html" class="control">
+        <i class="fas fa-user"></i></a>
+    </div>
+    <div><a href="./portfolio.html" class="control">
+        <i class="fas fa-briefcase"></i></a>
+    </div>
+    <div><a href="./gallery.html" class="control active-btn">
+        <i class="fas fa-image"></i></a>
+    </div>
+    <div><a href="./blogs.html" class="control">
+        <i class="far fa-newspaper"></i></a>
+    </div>
+    <div><a href="./contact.html" class="control">
+        <i class="fas fa-envelope-open"></i></a>
+    </div>
+</div>
+<div class="theme-btn">
+    <i class="fas fa-adjust"></i>
+</div>
+<script src="./static/app.js"></script>
+<script src="./static/app2.js"></script>
+</body>
+</html>
